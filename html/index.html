@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Big App</title>
+</head>
+<body>
+    <div class="header">
+        <img onclick="openNav()" src="../images/menu-24px.svg" alt="" />
+        <div class="userIconHeader" onclick="openContainer()">R</div>
+        <div class="hiddenContainer" id="hiddenContainer">
+            <div class="hiddenContainer_head">Account</div>
+            <div class="hiddenContainer_body" onclick="gotoProfileEdit()">
+                <div class="hidConSym">R</div>
+                <div class="nameDiv">
+                    <div class="hideName">John Smith</div>
+                    <div class="hideEmail">johnsmith@api.com</div>
+                </div>
+            </div>
+            <div class="hideFooter">
+                <button onclick="openContainer()">Sign out</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content1">
+            <div class="filterDiv">
+                <select class="oneWay">
+                    <option>One-way</option>
+                    <option>Two-way</option>
+                    <option>More</option>
+                </select>
+                <select class="passenger">
+                    <option>1 passenger</option>
+                    <option>2 passenger</option>
+                    <option>3 passenger</option>
+                </select>
+                <select class="economy">
+                    <option>Premium Economy</option>
+                    <option>Business</option>
+                    <option>Economy</option>
+                </select>
+            </div>
+            <div class="sourceDestination">
+                <div class="inputDiv1">
+                    <img src="../images/flight_takeoff-24px.svg" alt="" />
+                    <input value="Bengaluru" />
+                </div>
+                <div class="inputDiv2">
+                    <img src="../images/flight_land-24px.svg" alt="" />
+                    <input value="New York" />
+                </div>
+                <div class="inputDiv3">
+                    <img src="../images/date_range-24px (2).svg" alt="" />
+                    <input value="Sat, 29 Aug, 2021" />
+                </div>
+                <button class="content1Btn">
+                    <div class="btnPara1">+ ADD RETURN DATE</div>
+                    <div class="btnPara2">See more on return trips!</div>
+                </button>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="contentCol1">
+                <div class="dummyContent1"></div>
+                <div class="dummyContent2"></div>
+                <div class="dummyContent3"></div>
+                <div class="dummyContent4"></div>
+                <div class="dummyContent5"></div>
+            </div>
+            <div class="contentCol2">
+                <div class="column2Div1">
+                    <div class="col1Content1">
+                        <img src="../images/fiber_manual_record-24px.svg" alt="" />
+                        <div>
+                            <div class="col1inner">Popular Flights</div>
+                            <div>$1206.00, Duration: 11h 54m</div>
+                        </div>
+                    </div>
+                    <div class="col1Content2">
+                        <img src="../images/fiber_manual_record-24px.svg" alt="" />
+                        <div>
+                            <div class="col1inner">Cheapest Flights</div>
+                            <div>$1206.00, Duration: 11h 54m</div>
+                        </div>
+                    </div>
+                    <div class="col1Content3">
+                        <img src="../images/fiber_manual_record-24px.svg" alt="" />
+                        <div>
+                            <div class="col1inner">Cheapest Flights</div>
+                            <div>$1206.00, Duration: 11h 54m</div>
+                        </div>
+                    </div>
+                    <div onclick="openSortFilter()" class="col1Content4">
+                        <img src="../images/sort-24px.svg" alt="" />
+                        <div>
+                            <div class="col1inner">Other sort options</div>
+                            <div>$1206.00, Duration: 11h 54m</div>
+                        </div>
+                        <div id="filterContainer" class="filterContainer">
+                            <div class="filterContainer_head">Sort by:</div>
+                            <div class="filterContainer_du">
+                                <img src="../images/flight_takeoff-24px.svg" alt="" />
+                                <div>Duration Time</div>
+                            </div>
+                            <div class="filterContainer_arr">
+                                <img src="../images/flight_land-24px.svg" alt="" />
+                                <div>Arrival Time</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bestFlight">Best Flights</div>
+                <div class="bestFlightPara">Total price includes taxes + fees for 1 adult. Additional bag fees and other fees may apply.</div>
+                <div class="tickets">
+                    <div class="ticketsCol1">
+                        <div class="ticket1">
+                            <img src="../images/spice jet@2x.png" />
+                            <div>
+                                <div>21:55 - 07:00+2 Days</div>
+                                <div>Spicejet</div>
+                            </div>
+                            <div>
+                                <div>43 h 35 m</div>
+                                <div>BLR - JFK</div>
+                            </div>
+                            <div>
+                                <div>1 Stop</div>
+                                <div>25 h 20 m DEL</div>
+                            </div>
+                            <div>
+                                <button>Book Now</button>
+                                <div>Flight Details</div>
+                            </div>
+                        </div>
+                        <div class="ticket2">
+                            <img src="../images/spice jet@2x.png" />
+                            <div>
+                                <div>21:55 - 07:00+2 Days</div>
+                                <div>Spicejet</div>
+                            </div>
+                            <div>
+                                <div>43 h 35 m</div>
+                                <div>BLR - JFK</div>
+                            </div>
+                            <div>
+                                <div>1 Stop</div>
+                                <div>25 h 20 m DEL</div>
+                            </div>
+                            <div>
+                                <button>Book Now</button>
+                                <div>Flight Details</div>
+                            </div>
+                        </div>
+                        <div class="ticket3">
+                            <img src="../images/spice jet@2x.png" />
+                            <div>
+                                <div>21:55 - 07:00+2 Days</div>
+                                <div>Spicejet</div>
+                            </div>
+                            <div>
+                                <div>43 h 35 m</div>
+                                <div>BLR - JFK</div>
+                            </div>
+                            <div>
+                                <div>1 Stop</div>
+                                <div>25 h 20 m DEL</div>
+                            </div>
+                            <div>
+                                <button>Book Now</button>
+                                <div>Flight Details</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticketsCol2">
+                        <div>Economy</div>
+                        <div>$ 577.00</div>
+                        <div>Price per person (incl. taxes & fees)</div>
+                        <div>Get up to $ 200 OFF. Use code: FCINTFLY</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <div id="navBar" class="navBar">
+        <div class="navBarContainer">
+            <div class="navBarHead">
+                <img onclick="closeNav()" src="../images/arrow_back-24px (3).svg" />
+            </div>
+            <div class="container1">
+                <div class="rows">
+                    <img src="../images/flight-24px.svg" />
+                    <div>Flights</div>
+                </div>
+                <div class="rows">
+                    <img src="../images/class-24px.svg" />
+                    <div>Hotel</div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="rows">
+                    <img src="../images/flight-24px.svg" />
+                    <div>Bookings</div>
+                </div>
+                <div class="rows">
+                    <img src="../images/class-24px.svg" />
+                    <div>Travellers</div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="rows">
+                    <img src="../images/flight-24px.svg" />
+                    <div>Agency Wallet</div>
+                </div>
+                <div class="rows">
+                    <img src="../images/class-24px.svg" />
+                    <div>Agency Users</div>
+                </div>
+                <div class="rows">
+                    <img src="../images/flight-24px.svg" />
+                    <div>Organisation Profile</div>
+                </div>
+                <div class="rows">
+                    <img src="../images/class-24px.svg" />
+                    <div>Settings</div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="rows">
+                    <img src="../images/flight-24px.svg" />
+                    <div>About</div>
+                </div>
+                <div class="rows">
+                    <img src="../images/class-24px.svg" />
+                    <div>Help & Feedback</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("navBar").style.display = "flex"
+        }
+        function closeNav() {
+            document.getElementById("navBar").style.display = "none"
+        }
+        var isOpen = false
+        function openContainer() {
+            if(isOpen === false){
+                document.getElementById("hiddenContainer").style.display = "block";
+                isOpen = true
+            }else{
+                document.getElementById("hiddenContainer").style.display = "none";
+                isOpen = false
+            }
+        }
+        function gotoProfileEdit() {
+            window.location.href = "index1.html"
+        }
+        var isSortOpen = false;
+        function openSortFilter() {
+            if(isSortOpen === false) {
+                document.getElementById("filterContainer").style.display = "block";
+                isSortOpen = true;
+            }else {
+                document.getElementById("filterContainer").style.display = "none";
+                isSortOpen = false;
+            }
+        }
+    </script>
+</body>
+</html>

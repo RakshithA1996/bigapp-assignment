@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+}
+
+/* HEADER */
+.header {
+  background: #fa6204 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header img {
+  margin-left: 18px;
+}
+
+.userIconHeader {
+  background: #1e4e40 0% 0% no-repeat padding-box;
+  padding: 6px 10px;
+  border-radius: 50%;
+  color: #ffffff;
+  margin-right: 18px;
+  font: normal normal normal 16px/18px Helvetica Neue;
+}
+
+.contentBody {
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.contentBody img {
+  margin-left: 200px;
+}
+
+.bodyContent {
+  padding: 33px 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  margin: auto;
+  width: 60%;
+}
+
+.contentBody img:hover {
+  cursor: pointer;
+}
+
+.profile {
+  letter-spacing: 0.43px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.basic {
+  letter-spacing: 0px;
+  color: #5f6368;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.col1 {
+  width: 20%;
+}
+
+.col2,
+.col3 {
+  width: 30%;
+  margin-left: 20px;
+}
+
+.col3 {
+  margin-left: 50px;
+}
+
+.col1 div,
+.col2 div,
+.col3 div {
+  width: 100%;
+  font-size: 14px;
+}
+
+.col1 select,
+.col2 input,
+.col3 input {
+  width: 100%;
+  padding: 12px;
+}
+
+.col1 select:focus,
+.col2 input:focus,
+.col3 input:focus {
+  outline: none;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-gap: 20px;
+}
+
+.row2 input {
+  width: 80%;
+  padding: 12px;
+}
+
+.feildDiv {
+  width: 70%;
+  margin-top: 20px;
+}
+
+.feild div {
+  width: 100%;
+  font-size: 14px;
+}
+
+.feild input:focus {
+  outline: none;
+}
+
+.formDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.formDivBtn1,
+.formDivBtn2 {
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 10px 30px;
+}
+
+.formDivBtn1:hover,
+.formDivBtn2:hover {
+  cursor: pointer;
+}
+
+.formDivBtn1:focus,
+.formDivBtn2:focus {
+  outline: none;
+}
+
+.formDivBtn2 {
+  margin-left: 14px;
+  background: #0d0d73 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  color: #ffffff;
+}
